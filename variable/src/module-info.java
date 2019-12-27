@@ -1,0 +1,3 @@
+module variable {
+	exports variable;
+}
