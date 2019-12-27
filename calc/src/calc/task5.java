@@ -7,20 +7,19 @@ public class task5 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-		Scanner sc=new Scanner(System.in);
-		String str1="ノートPCの値段:";
-		String str2="89800円";
-		String str3=str1.concat(str2);
-		System.out.println(str3);
-		
-		String str=sc.nextLine();
-		String strA=sc.nextLine();
-		String strB=str.concat(strA);
+		Scanner sc = new Scanner(System.in);
+		String str1 = "ノートPCの値段:";
+		int num = 89800;
+		String intnum = String.valueOf(num);
+		String str2 = "円";
+		System.out.println(str1 + intnum + str2);
+
+		String str = sc.nextLine();
+		String strA = sc.nextLine();
+		String strB = str.concat(strA);
 		System.out.println(strB);
-		
 		sc.close();
-		
-		
+
 	}
 
 }

@@ -6,9 +6,8 @@ public class task4 {
 		// TODO 自動生成されたメソッド・スタブ
 
 		int num=192837;
-		System.out.println("(一の位を除いた数):"+(num/10));
-		System.out.println("(一の位の数):"+(num%10));
+		System.out.println("(一の位を除いた数):" + (num / 10));
+		System.out.println("(一の位の数):" + (num % 10));
 		
 	}
-
 }
