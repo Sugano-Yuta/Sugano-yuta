@@ -7,36 +7,32 @@ public class task6 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-		Scanner sc=new Scanner(System.in);
-		
-		int num=sc.nextInt();
-		
-		String str="";
-		
-		if(num==1) {
-			str="I";
-			//=で代入==で比較
-		}
-		else if(num==2) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("1から5までの数字を入力してください");
+		int num = sc.nextInt();
+		String str = "";
+
+		switch(num) {
+		case 1:
+			str = "I";
+			break;
+		case 2:
 			str="II";
-		}
-		
-		else if(num==3) {
+			break;
+		case 3:
 			str="III";
-		}
-		else if(num==4) {
+			break;
+		case 4:
 			str="VI";
-		}
-		else if(num==5){
+			break;
+		case 5:
 			str="V";
-		}
-		else {
+			break;
+		default:
 			str="unknown";
 		}
-		System.out.println(str);
+		System.out.println(num + "→" + str);
 
 		sc.close();
-		
-	}
-
+		}
 }
