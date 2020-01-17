@@ -9,11 +9,11 @@ public class task1 {
 		System.out.print("配列:[");
 		for(int i = 0; i < array.length; i++) {
 			if(i <= 9) {
-					System.out.print(array[i] + ",");
+				System.out.print(array[i] + ",");
 			}else if (i == 10) {
-					System.out.println(array[10] + "]");
+				System.out.println(array[10] + "]");
 			}
-				sum += array[i];
+			sum += array[i];
 		}
 		System.out.print(sum);
 	}
