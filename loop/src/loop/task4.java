@@ -14,7 +14,7 @@ public class task4 {
 		for(int i = 1; i <= num; i++) {
 
 			if (num == i) System.out.print(i);
-			else if(num%i==0) System.out.print(i+",");
+			else if(num % i == 0) System.out.print(i + ",");
 		}
 		sc.close();
 	}
