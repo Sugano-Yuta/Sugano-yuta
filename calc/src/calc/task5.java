@@ -10,9 +10,8 @@ public class task5 {
 		Scanner sc = new Scanner(System.in);
 		String str1 = "ノートPCの値段:";
 		int num = 89800;
-		String intnum = String.valueOf(num);
 		String str2 = "円";
-		System.out.println(str1 + intnum + str2);
+		System.out.println(str1 + num + str2);
 
 		String str = sc.nextLine();
 		String strA = sc.nextLine();
