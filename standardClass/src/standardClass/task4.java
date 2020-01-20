@@ -10,10 +10,8 @@ public class task4 {
 		String str2 = sc.next();
 		if(str.contains(str2)) {
 			System.out.println(str + "は" + str2 + "を含む");
-		}else {System.out.println(str + "は" + str2 + "を含まない" );
-			
+		}else {
+			System.out.println(str + "は" + str2 + "を含まない" );
 		}sc.close();
-
 	}
-
 }
