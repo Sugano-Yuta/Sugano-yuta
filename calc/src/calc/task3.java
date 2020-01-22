@@ -7,7 +7,7 @@ public class task3 {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		int num = sc.nextInt();
 		int numA = sc.nextInt();
 		int numB = sc.nextInt();
