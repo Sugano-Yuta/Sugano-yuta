@@ -12,6 +12,7 @@ public class task4 {
 			System.out.println(str + "は" + str2 + "を含む");
 		}else {
 			System.out.println(str + "は" + str2 + "を含まない" );
-		}sc.close();
+		}
+		sc.close();
 	}
 }
