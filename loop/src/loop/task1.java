@@ -15,8 +15,8 @@ public class task1 {
 			sum += i;
 		}
 
-		System.out.println("数字を入れて下さい:"+ num);
-		System.out.println("1から"+ num +"までの合計:"+ sum);
+		System.out.println("数字を入れて下さい:" + num);
+		System.out.println("1から" +  num + "までの合計:" + sum);
 		sc.close();
 	}
 }
