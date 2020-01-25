@@ -12,14 +12,13 @@ public class task2 {
 
 		for(int i = 1;i <= num; i++) {
 			if(i < num) {
-				System.out.print(i + "+");
+				System.out.print(i + " + ");
 			}else if(i == num){
-				System.out.print(i);
+				System.out.println(i);
 			}
 			sum += i;
 		}
-		System.out.print("=" + sum);
+		System.out.println("=" + sum);
 		sc.close();
-
 	}
 }
