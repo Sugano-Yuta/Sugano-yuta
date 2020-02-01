@@ -7,7 +7,7 @@ public class Main  {
 		System.out.println();
 		System.out.println(Person.wallet);
 
-		Person Person = new Person();
+
 		Person hoge01 = new Person(1000);
 		Person hoge02 = new Person(2000);
 		System.out.println("インスタンスhoge01でwalletにアクセス");

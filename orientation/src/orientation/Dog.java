@@ -1,22 +1,26 @@
 package orientation;
 
 public class Dog extends Animal{
+	double weight;
 
-	public static void main(String[] args) {
+	public Dog() {
 
-		Animal Animal = new Animal();
-		Animal.name = "ポチ";
-		Animal.age = 5;
-		Animal.weight = 12.3;
+	}
+	public Dog (String name,int age,double weight) {
+		this.weight = weight;
+		this.name = name;
+		this.age = age;
+		System.out.println("体重:" + this.weight + "kg" );
+		System.out.println("名前:" + this.name);
+		System.out.println("年齢:" + this.age  + "歳");
 
-		System.out.println("名前:" + Animal.name);
-		System.out.println("年齢:" +Animal.age +"歳");
-		System.out.println("体重:" + Animal.weight + "Kg");
+	}
 
-		run(name);
-		sleep();
-		{
-		System.out.println(Animal.name + "は眠った");
-		}
+	public void run() {
+		System.out.println(name + "は走った");
+	}
+
+	public void sleep() {
+		System.out.println(name + "は眠った");
 	}
 }
