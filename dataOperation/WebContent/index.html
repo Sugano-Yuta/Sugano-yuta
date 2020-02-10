@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+</head>
+<body>
+	<form action=Result method="get">
+	<p>
+		名前: <input type="text" name="name">
+	</P>
+	<br>
+	<p>
+		性別: <input type = "radio" name ="gender" value = male> 男
+			  <input type = "radio" name = "gender" value = female> 女
+	</p>
+	<p>
+		お問い合わせ種類<br> <select name="contactUs">
+			<option value="a">1.製品について</option>
+			<option value="b">2.不具合やクレーム</option>
+			<option value="c">3.アフターサポート</option>
+		</select><br>
+	</p>
+	<label for="naiyou">お問い合わせ内容</label>
+	<br>
+	<textarea id="naiyou" name="naiyou" cols="30" rows="5" maxlength="150"
+		placeholder="150文字以内で入力してください"></textarea><br>
+	<input type="submit" value="送信" name = submitBtn onClick = "location.href = 'Result'">
+
+	</form>
+
+
+
+</body>
+</html>
