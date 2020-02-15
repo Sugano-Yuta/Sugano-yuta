@@ -6,7 +6,7 @@ import java.util.Date;
 public class FortuneBean implements Serializable{
 
 	private String fortune = "";
-	private Date toDay ;
+	private Date today ;
 
 	public FortuneBean() {}; //引数なしのコンストラクタ
 
@@ -20,10 +20,10 @@ public class FortuneBean implements Serializable{
 	//getは取ってくるだけだから引数はいらない、リターンで返す
 	//setはgetで取ってきたものを置くから引数で指定、戻り値はないからvoid 変数名
 	public Date getToday() {
-		return this.toDay;
+		return this.today;
 	}
 
-	public void setToday(Date toDay) {
-		this.toDay = toDay;
+	public void setToday(Date today) {
+		this.today = today;
 	}
 }
