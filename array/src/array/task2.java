@@ -14,7 +14,8 @@ public class task2 {
 			}else if(num == array.length) {
 				array[num] = array.length - num;
 			}
-		}System.out.println(Arrays.toString(array));
+		}
+		System.out.println(Arrays.toString(array));
 		
 		
 		for(int i = 0; i < array.length; i++) {
@@ -23,6 +24,7 @@ public class task2 {
 			}else if(i == array.length){
 				array[i] = i;
 			}
-		}System.out.println(Arrays.toString(array));
+		}
+		System.out.println(Arrays.toString(array));
 	}
 }

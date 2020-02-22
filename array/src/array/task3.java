@@ -5,26 +5,30 @@ import java.util.Random;
 public class task3 {
 
 	public static void main(String[] args) {
-
-		System.out.print("[");
-		Random random = new Random();
-		int[] array = new int[6];
-		int max = 0;
-		int min = 9;
-
+		System.out.println("[");
+		Random r = new Random();
+		int array [] = new int [6]; 
+		int max = array[0];
+		int min = array[0];
 		for(int i = 0; i < array.length; i++) {
-			array[i] = random.nextInt(10);
-			if(i <= array.length-2) {
+			array[i] = r.nextInt(10);
+		}
+		for(int i= 0; i <= array.length ; i++) {
+			if(i != array.length) {
 				System.out.print(array[i] + ",");
-			}else if(i == array.length-1) {
-				System.out.println(array[i] + "]");
-			}if(max < array[i]) {
-				max = array[i];
-			}if(min > array[i]) {
+				if(i == array.length){
+					System.out.println(array[i] + "]");
+				}
+			}
+			if(min < array[i]) {
 				min = array[i];
 			}
+			if(max > array[i]) {
+				max = array[i];
+			}
 		}
-		System.out.println("最大値:" + max);
-		System.out.println("最小値:"+ min);		
+		System.out.println("最大値" + max);
+		System.out.println("最小値" + min);
 	}
+	
 }
