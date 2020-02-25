@@ -8,10 +8,10 @@ public class Main {
 		Dog dog = new Dog("ポチ",5,12.3); //コンストラクタを呼び出し実行するためにnew ,()に引数を入れた
 		Animal animal = new Animal();
 
-		animal = dog;
+		//animal = dog;
+		dog.run();
 		animal.sleep();
 		dog.sleep();
-		dog.run();
 
 
 	}
