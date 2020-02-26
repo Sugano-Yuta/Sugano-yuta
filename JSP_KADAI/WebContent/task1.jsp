@@ -4,12 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>jsp_kadai1</title>
 </head>
 <body>
 <h1>Hello JSP</h1>
-<h2>Hello JSP</h2>]
+<h2>Hello JSP</h2>
 <h3>Hello JSP</h3>
-System.out.println("Hello JSP");
+<% out.println("Hello JSP"); %>
 </body>
 </html>
