@@ -27,19 +27,19 @@ public class task7 {
 		int dayofweek = future.get(Calendar.DAY_OF_WEEK);
 		switch(dayofweek){
 		case 1 :System.out.print("(日曜日)");
-			break;
+		break;
 		case 2:System.out.print("(月曜日)");
-			break;
+		break;
 		case 3:System.out.print("(火曜日)");
-			break;
+		break;
 		case 4:System.out.print("(水曜日)");
-			break;
+		break;
 		case 5:System.out.print("(木曜日)");
-			break;
+		break;
 		case 6:System.out.print("(金曜日)");
-			break;
+		break;
 		case 7:System.out.print("(土曜日)");
-			break;
+		break;
 		}
 	}
 }
