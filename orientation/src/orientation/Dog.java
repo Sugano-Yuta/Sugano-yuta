@@ -12,9 +12,6 @@ public class Dog extends Animal{
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
-		System.out.println("名前:" + this.name);
-		System.out.println("年齢:" + this.age + "歳");
-		System.out.println("体重:" + this.weight + "kg");
 	}
 	public void run() {
 		System.out.println(name + "は走った");

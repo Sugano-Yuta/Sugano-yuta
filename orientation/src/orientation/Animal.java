@@ -7,10 +7,11 @@ public class Animal {
 	public Animal() {
 
 	}
-	//	System.out.println("名前:" + this.name);
-//	System.out.println("年齢:" + this.age + "歳");
+	public Animal(String name,int age) {
+		this.name = name;
+		this.age = age;
+	}
 	public void sleep() {
 		System.out.println("眠った");
 	}
 }
-	
