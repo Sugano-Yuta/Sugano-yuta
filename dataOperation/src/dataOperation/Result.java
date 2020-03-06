@@ -20,6 +20,16 @@ public class Result extends HttpServlet {
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		//doGet(request, response);
 		//テキストボックス、チェックボックスの情報を取得
+
+
+
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
 		String name = request.getParameter("name");
 		String gender = request.getParameter("gender");
 		String contactUs = request.getParameter("contactUs");
@@ -62,16 +72,6 @@ public class Result extends HttpServlet {
 		out.println(br);
 		out.println("</body>");
 		out.println("</html>");
-
-
-	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-
 	}
 
 }
