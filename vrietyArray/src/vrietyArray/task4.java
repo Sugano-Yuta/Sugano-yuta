@@ -2,6 +2,7 @@ package vrietyArray;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 public class task4 {
 
@@ -12,20 +13,18 @@ public class task4 {
 		ArrayList <Integer> even = new ArrayList<>();
 		for(int i = 0; i < array.length; i++) {
 			if(array[i] % 2 == 0) {
-				even.add(array[i]);
+				even.add(array[i]);			//偶数
 			}else {
-				odd.add(array[i]);
+				odd.add(array[i]);			//奇数
 			}
-		}//System.out.println(odd);
-		HashMap <Integer, Integer> oddHashMap = new HashMap<>();
-		HashMap <Integer, Integer> evenHashMap = new HashMap<>();
-		for(int i = 0; i < odd.size(); i++) {
-			oddHashMap.put(i,odd.get(i));
+
+			Map<Integer,ArrayList<Integer>> map = new HashMap<>();
+			map.put(1, odd);
+			map.put(2, even);
+
 		}
-		for(int i = 0; i < even.size(); i++) {
-			evenHashMap.put(i,even.get(i));
-		}
-		System.out.println("{偶数" + evenHashMap.values() + "}");
-		System.out.println("{奇数" + oddHashMap.values() + "}");
+		System.out.println("奇数" + odd);
+		System.out.println("偶数" + even);
+
 	}
 }
