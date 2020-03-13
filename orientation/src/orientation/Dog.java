@@ -2,8 +2,6 @@ package orientation;
 
 public class Dog extends Animal{
 
-	String name;
-	int age;
 	double weight;
 
 	public Dog(){
