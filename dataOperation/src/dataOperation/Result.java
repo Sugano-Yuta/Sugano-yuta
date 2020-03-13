@@ -48,7 +48,7 @@ public class Result extends HttpServlet {
 		out.println("<body>");
 		out.println("以下の内容でお問い合わせしました。回答をお待ちください。");
 		out.println("<br>");
-		out.println(name + "様");
+		out.println("名前:" + name + "様");
 		out.println("<br>");
 		//性別の変数の変換
 		String gender1 = "female";
