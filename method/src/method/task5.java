@@ -6,25 +6,26 @@ public class task5 {
 
 
 
-		String array1 [] = {"a","b","c"};
-		nullcheck();
-	//	List<String> L1 = Arrays.asList(array1);
+		String array [] = {"a","b","c"};
+		nullcheck(array);
+		//	List<String> L1 = Arrays.asList(array1);
 		String array2 [] = {"a",null,"c"};
-		nullcheck();
-	//	List<String> L2 = Arrays.asList(array2);
-	//	if(L1.contains(null)) {
-	//		System.out.println(true);
-	//	}else System.out.println(false);
-	//	if(L2.contains(null)) {
-	//		System.out.println(true);
-	//	}else System.out.println(false);
+		nullcheck(array2);
+
 
 	}
 
+	private static void nullcheck(String array[]) {
+		// TODO 自動生成されたメソッド・スタブ
+		for(int i = 0; i < array.length; i++) {
+			if(array[i] != null) {
+				System.out.println(false);
+			}else if(array[i] == null){
+				System.out.println(true);
+			}
 
-	public static boolean nullcheck() {
-
-		return false;
-
+		}
 	}
+
 }
+
