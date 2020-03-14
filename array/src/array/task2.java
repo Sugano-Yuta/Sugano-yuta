@@ -8,12 +8,15 @@ public class task2 {
 		for(int i = 0; i < array.length; i++) {
 			if(i < array.length -1 ) {
 				System.out.print(array[i] + ",");
-			}if(i == array.length-1) {System.out.println(array[i]);
+			}if(i == array.length-1) {
+				System.out.println(array[i]);
 			}
 		}
-		for(int i = 6; i < array.length  ; i--) {
-			if(i < array.length  ) {
+		for(int i = array.length-1; i > -1; i--) {
+			if(i > 0) {
 				System.out.print(array[i] + ",");
+			}if(i == 0) {
+				System.out.print(array[i]);
 			}
 		}
 	}
