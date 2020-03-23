@@ -1,5 +1,7 @@
 package method;
 
+import java.util.Objects;
+
 public class task5 {
 
 	public static void main(String[] args) {
@@ -8,24 +10,27 @@ public class task5 {
 
 		String array [] = {"a","b","c"};
 		nullcheck(array);
-		//	List<String> L1 = Arrays.asList(array1);
+		boolean result = nullcheck(array);
+		String str1 = String.valueOf(result);
+		System.out.println(str1);
 		String array2 [] = {"a",null,"c"};
 		nullcheck(array2);
+		boolean result2 = nullcheck(array2);
+		String str2 = String.valueOf(result2);
+		System.out.println(str2);
 
 
 	}
 
-	private static void nullcheck(String array[]) {
+	private static boolean nullcheck(String array[]) {
 		// TODO 自動生成されたメソッド・スタブ
+		boolean result = false ;
 		for(int i = 0; i < array.length; i++) {
-			if(array[i] != null) {
-				System.out.println(false);
-			}else if(array[i] == null){
-				System.out.println(true);
+			if(Objects.equals(array[i],null)) {
+				result = true;
 			}
-
 		}
+		return result;
 	}
-
 }
 
