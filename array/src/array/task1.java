@@ -18,7 +18,7 @@ public class task1 {
 
 		for(int i : array) {
 			sum += i;
-	}//合計を求めるための拡張for文。15行目からのが拡張for、完全に通常のforとごちゃごちゃしてた.
+		}//合計を求めるための拡張for文。15行目からのが拡張for、完全に通常のforとごちゃごちゃしてた.
 		System.out.println("合計" + sum);
 	}
 }
