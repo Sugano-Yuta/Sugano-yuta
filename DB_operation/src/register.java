@@ -41,10 +41,10 @@ public class register extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
 		String id = request.getParameter("id");
 		String name = request.getParameter("name");
-		//	String birthday = request.getParameter("birthday");
+		String birthday = new SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date());
+		java.sql.Date sqlDate = java.sql.Date.valueOf(birthday);
 		String age = request.getParameter("age");
 
 		response.setCharacterEncoding("text/html; charset = UTF-8");
@@ -73,13 +73,7 @@ public class register extends HttpServlet {
 
 			ps.setInt(1, Integer.parseInt(id));
 			ps.setString(2,name);
-			//	SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-			String birthday = new SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date());
-			java.sql.Date sqlDate = java.sql.Date.valueOf(birthday);
 			ps.setDate(3,sqlDate);
-
-			//	ps.setDate(3, );
-
 			ps.setInt(4, Integer.parseInt(age));
 
 			int num = ps.executeUpdate();

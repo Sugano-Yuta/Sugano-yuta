@@ -41,12 +41,9 @@ public class search extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
 
 		request.setCharacterEncoding("UTF-8");
 		String name = request.getParameter("name");
-		String age = request.getParameter("age");
-
 
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
