@@ -17,7 +17,8 @@ public class ConnectDB {
 
 		}catch(SQLException e) {
 			e.printStackTrace();
-		}catch(ClassNotFoundException e) {
+
+		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		}finally {
 			if(con != null) {
