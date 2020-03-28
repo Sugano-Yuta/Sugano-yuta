@@ -9,9 +9,10 @@ public class task1 {
 		System.out.print("配列:[");
 
 		for(int i = 0; i <= array.length; i++) {
-			if(i < array.length -1) {
-				System.out.print(array[i] + ",");
-			}if(i == array.length -1) {
+			if(i < array.length -1)
+			{	System.out.print(array[i] + ",");
+			}
+			if(i == array.length -1) {
 				System.out.println(array[i] + "]");
 			}
 		}

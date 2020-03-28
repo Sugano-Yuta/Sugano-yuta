@@ -5,7 +5,7 @@ public class task2 {
 	public static void main(String[] args) {
 
 		int [] array = new int[8];
-		for(int i = 1; i < array.length; i++ ) {
+		for(int i = array.length -1 ; i > 0; i-- ) {
 			array[i] = i;
 			}
 		for(int i = array.length -1 ; i > 0; i--) {
