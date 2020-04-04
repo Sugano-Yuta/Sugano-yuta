@@ -88,6 +88,7 @@ public class search extends HttpServlet {
 				out.println("生年月日" + rs.getDate("birthday"));
 				out.println("<br>");
 				out.println("年齢:" + rs.getInt("age"));
+				out.println("<br>");
 
 			}
 

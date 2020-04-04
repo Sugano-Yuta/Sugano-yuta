@@ -8,8 +8,8 @@
 </head>
 <body>
 	<form action="/operation/DeleteEmployee" method="post">
-		削除するID<br>
-		<input type="text" name="id"><br> <input type="submit" value="送信">
+		削除するID<br> <input type="text" name="id"><br> <input
+			type="submit" value="送信">
 	</form>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,9 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="/operation/search" method="post">
-名前<br><input type="text" name="name"><br>
-<input type="submit" value="検索">
-</form>
+	<form action="/operation/search" method="post">
+		名前<br>
+		<input type="text" name="name"><br> <input type="submit"
+			value="検索">
+	</form>
 </body>
 </html>

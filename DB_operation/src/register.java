@@ -5,7 +5,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.text.SimpleDateFormat;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -41,13 +40,14 @@ public class register extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		request.setCharacterEncoding("UTF-8");
+		response.setContentType("text/html; charset = UTF-8");
+
 		String id = request.getParameter("id");
 		String name = request.getParameter("name");
-		String birthday = new SimpleDateFormat("yyyy-MM-dd").format(new java.util.Date());
-		java.sql.Date sqlDate = java.sql.Date.valueOf(birthday);
+		String birthday = request.getParameter("birthday");
 		String age = request.getParameter("age");
 
-		response.setCharacterEncoding("text/html; charset = UTF-8");
 		PrintWriter out = response.getWriter();
 		out.println("<!DOCTYPE html>");
 		out.println("<html>");
@@ -73,7 +73,7 @@ public class register extends HttpServlet {
 
 			ps.setInt(1, Integer.parseInt(id));
 			ps.setString(2,name);
-			ps.setDate(3,sqlDate);
+			ps.setString(3,birthday);
 			ps.setInt(4, Integer.parseInt(age));
 
 			int num = ps.executeUpdate();
